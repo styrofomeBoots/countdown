@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>IMY</title>
+</head>
+
+<body>
+  <div class="nav-bar">
+    <span class="banner">IMY</span>
+  </div>
+  <div class="body">
+    <p>Counting down the seconds until you come home.</p>
+    <div class="countdown">
+      <div class="time-div" id="hide-years">
+        <span class="time-input" id="years"></span>
+        <span class="time-name" id="years-name">years</span>
+      </div>
+      <div class="time-div">
+        <span class="time-input" id="days"></span>
+        <span class="time-name">days</span>
+      </div>
+      <div class="time-div">
+        <span class="time-input" id="hours"></span>
+        <span class="time-name">hours</span>
+      </div>
+      <div class="time-div">
+        <span class="time-input" id="minutes"></span>
+        <span class="time-name">minutes</span>
+      </div>
+      <div class="time-div">
+        <span class="time-input" id="seconds"></span>
+        <span class="time-name">seconds</span>
+      </div>
+    </div>
+    <p id='help-text'>This is the actual countdown</p>
+    <div class="button-div">
+      <a class="waves-effect waves-light btn white-text a-button deep-purple" id="days"
+        onClick="buttonClicked(this)">Day
+        Countdown</a>
+      <a class="waves-effect waves-light btn white-text a-button deep-purple" id="seth"
+        onClick="buttonClicked(this)">Seth Countdown</a>
+    </div>
+  </div>
+  <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="./node_modules/moment/min/moment-with-locales.min.js"></script>
+  <script src="./node_modules/countdown/countdown.js"></script>
+  <script src="./node_modules/moment-countdown/dist/moment-countdown.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

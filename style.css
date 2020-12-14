@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+}
+
+.nav-bar {
+  height: 50px;
+  background-color: #673ab7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  color: white;
+  font-size: medium;
+}
+
+.body {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+}
+
+.countdown {
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 100%;
+}
+
+.timer-button-clicked {
+  background-color:  #673ab7;
+}
+
+.timer-button {
+  background-color: #9575cd;
+}
+
+.time-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-input {
+  text-align: center;
+  font-size: 35px;
+}
+
+.time-name {
+  text-align: center;
+}
+
+.button-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.a-button {
+  width: 75%;
+  margin: 5px;
+  align-self: center;
+}
+
+p {
+  text-align: center;
+}
