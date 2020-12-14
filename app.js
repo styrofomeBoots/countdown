@@ -43,11 +43,12 @@ const startTime = () => {
   hideYears.hidden = true;
   yearsName.hidden = true;
 
-  let timeUntil = moment(returnDate).countdown(new Date()).toString();
-  let deltaDays = timeUntil.split(' ')[0];
-  let deltaHours = timeUntil.split(' ')[2];
-  let deltaMinutes = timeUntil.split(' ')[4];
-  let deltaSeconds = timeUntil.split(' ')[7];
+  let timeUntil = moment(returnDate).countdown(new Date());
+  console.log(timeUntil);
+  let deltaDays = timeUntil.days;
+  let deltaHours = timeUntil.hours;
+  let deltaMinutes = timeUntil.minutes;
+  let deltaSeconds = timeUntil.seconds;
 
   if (deltaSeconds == undefined) {
     deltaSeconds = 00;
